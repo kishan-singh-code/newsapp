@@ -1,0 +1,58 @@
+{
+  "status": "ok",
+  "totalResults": 4,
+  "articles": [
+    {
+      "source": {
+        "id": null,
+        "name": "Lifehacker.com"
+      },
+      "author": "Khamosh Pathak",
+      "title": "How to Pass on Your iPhone Data After You Die",
+      "description": "Our digital lives are heavily intertwined with our “real” lives, and Apple is finally starting to acknowledge that. The data that lives in our iCloud accounts is not only important to us, but also to our family members. Now, there's a way for our loved ones t…",
+      "url": "https://lifehacker.com/how-to-pass-on-your-iphone-data-after-you-die-1848213939",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/0cceaec5cf979f0d20fd295e6555f8b0.png",
+      "publishedAt": "2021-12-15T14:00:00Z",
+      "content": "Our digital lives are heavily intertwined with our real lives, and Apple is finally starting to acknowledge that. The data that lives in our iCloud accounts is not only important to us, but also to o… [+2162 chars]"
+    },
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "Jon Fingas",
+      "title": "Apple removes mentions of controversial child abuse scanning from its site",
+      "description": "Apple has hinted it might not revive its controversial effort to scan for CSAM (child sexual abuse material) photos any time soon. MacRumorsnotes Apple has removed all mentions of the scanning feature on its Child Safety website. Visit now and you'll only see…",
+      "url": "https://www.engadget.com/apple-removes-csam-mentions-on-website-151958410.html",
+      "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-09/f42439e0-1eed-11ec-8b73-9a109939072e",
+      "publishedAt": "2021-12-15T15:19:58Z",
+      "content": "Apple has hinted it might not revive its controversial effort to scan for CSAM (child sexual abuse material) photos any time soon. MacRumorsnotes Apple has removed all mentions of the scanning featur… [+1005 chars]"
+    },
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "Jon Fingas",
+      "title": "SiriusXM sued over lack of podcast transcripts for the hard of hearing",
+      "description": "SiriusXM has been accused of doing too little to make its podcasts accessible. The National Association of the Deaf and Disability Rights Advocates have filed a lawsuit against SiriusXM (including its Pandora and Stitcher brands) accusing it of excluding the …",
+      "url": "https://www.engadget.com/national-association-of-the-deaf-siriusxm-podcast-lawsuit-151509090.html",
+      "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-12/bf3dc550-5dab-11ec-bb77-e3d5315789dd",
+      "publishedAt": "2021-12-15T15:35:09Z",
+      "content": "SiriusXM has been accused of doing too little to make its podcasts accessible. The National Association of the Deaf and Disability Rights Advocates have filed a lawsuit against SiriusXM (including it… [+1200 chars]"
+    },
+    {
+      "source": {
+        "id": "wired",
+        "name": "Wired"
+      },
+      "author": "Lily Hay Newman",
+      "title": "Google Warns That NSO Hacking Rivals Elite Nation State Spies",
+      "description": "ForcedEntry is “one of the most technically sophisticated exploits” Project Zero security researchers have ever seen.",
+      "url": "https://www.wired.com/story/nso-group-forcedentry-pegasus-spyware-analysis/",
+      "urlToImage": "https://media.wired.com/photos/61ba01725d74af6a6a505e32/191:100/w_1280,c_limit/Sec_NSO_GettyImages-1236496545.jpg",
+      "publishedAt": "2021-12-15T18:00:00Z",
+      "content": "The Israeli spyware developer NSO Group has shocked the global security community for years with aggressive and effectivehacking tools that can target both Android and iOS devices. The company's prod… [+3397 chars]"
+    }
+  ]
+}
