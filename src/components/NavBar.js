@@ -32,6 +32,10 @@ export class NavBar extends Component {
                 </a>
               </li>
             </ul>
+            <div className="form-check form-switch">
+              <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+              <label className="form-check-label" for="flexSwitchCheckDefault">Enable Dark mode</label>
+            </div>
           </div>
         </div>
       </nav>
