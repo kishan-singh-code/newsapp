@@ -1,215 +1,266 @@
 {
   "status": "ok",
-  "totalResults": 4,
+  "totalResults": 38,
   "articles": [
     {
       "source": {
+        "id": "the-times-of-india",
+        "name": "The Times of India"
+      },
+      "author": "John Sarkar",
+      "title": "CCI suspends Amazon-Future deal, fines the US e-tailer Rs 200 crore - Times of India",
+      "description": "India Business News: The Competition Commission of India has suspended its approval of Amazon's 2019 deal with Future Coupons, on the sole basis of which the US e-tailer w",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/cci-suspends-amazon-future-deal-fines-the-us-e-tailer-rs-200-crore/articleshow/88345942.cms",
+      "urlToImage": "https://static.toiimg.com/thumb/msid-88345935,width-1070,height-580,imgsize-19348,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "publishedAt": "2021-12-17T15:58:00Z",
+      "content": "CCI suspends Amazon-Future deal, fines the US e-tailer Rs 200 crore"
+    },
+    {
+      "source": {
         "id": null,
-        "name": "Lifehacker.com"
-      },
-      "author": "Khamosh Pathak",
-      "title": "How to Pass on Your iPhone Data After You Die",
-      "description": "Our digital lives are heavily intertwined with our “real” lives, and Apple is finally starting to acknowledge that. The data that lives in our iCloud accounts is not only important to us, but also to our family members. Now, there's a way for our loved ones t…",
-      "url": "https://lifehacker.com/how-to-pass-on-your-iphone-data-after-you-die-1848213939",
-      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/0cceaec5cf979f0d20fd295e6555f8b0.png",
-      "publishedAt": "2021-12-15T14:00:00Z",
-      "content": "Our digital lives are heavily intertwined with our real lives, and Apple is finally starting to acknowledge that. The data that lives in our iCloud accounts is not only important to us, but also to o… [+2162 chars]"
-    },
-    {
-      "source": {
-        "id": "engadget",
-        "name": "Engadget"
-      },
-      "author": "Jon Fingas",
-      "title": "Apple removes mentions of controversial child abuse scanning from its site",
-      "description": "Apple has hinted it might not revive its controversial effort to scan for CSAM (child sexual abuse material) photos any time soon. MacRumorsnotes Apple has removed all mentions of the scanning feature on its Child Safety website. Visit now and you'll only see…",
-      "url": "https://www.engadget.com/apple-removes-csam-mentions-on-website-151958410.html",
-      "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-09/f42439e0-1eed-11ec-8b73-9a109939072e",
-      "publishedAt": "2021-12-15T15:19:58Z",
-      "content": "Apple has hinted it might not revive its controversial effort to scan for CSAM (child sexual abuse material) photos any time soon. MacRumorsnotes Apple has removed all mentions of the scanning featur… [+1005 chars]"
-    },
-    {
-      "source": {
-        "id": "engadget",
-        "name": "Engadget"
-      },
-      "author": "Jon Fingas",
-      "title": "SiriusXM sued over lack of podcast transcripts for the hard of hearing",
-      "description": "SiriusXM has been accused of doing too little to make its podcasts accessible. The National Association of the Deaf and Disability Rights Advocates have filed a lawsuit against SiriusXM (including its Pandora and Stitcher brands) accusing it of excluding the …",
-      "url": "https://www.engadget.com/national-association-of-the-deaf-siriusxm-podcast-lawsuit-151509090.html",
-      "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-12/bf3dc550-5dab-11ec-bb77-e3d5315789dd",
-      "publishedAt": "2021-12-15T15:35:09Z",
-      "content": "SiriusXM has been accused of doing too little to make its podcasts accessible. The National Association of the Deaf and Disability Rights Advocates have filed a lawsuit against SiriusXM (including it… [+1200 chars]"
-    },
-    {
-      "source": {
-        "id": "wired",
-        "name": "Wired"
-      },
-      "author": "Lily Hay Newman",
-      "title": "Google Warns That NSO Hacking Rivals Elite Nation State Spies",
-      "description": "ForcedEntry is “one of the most technically sophisticated exploits” Project Zero security researchers have ever seen.",
-      "url": "https://www.wired.com/story/nso-group-forcedentry-pegasus-spyware-analysis/",
-      "urlToImage": "https://media.wired.com/photos/61ba01725d74af6a6a505e32/191:100/w_1280,c_limit/Sec_NSO_GettyImages-1236496545.jpg",
-      "publishedAt": "2021-12-15T18:00:00Z",
-      "content": "The Israeli spyware developer NSO Group has shocked the global security community for years with aggressive and effectivehacking tools that can target both Android and iOS devices. The company's prod… [+3397 chars]"
-    },
-
-    {
-      "source": {
-        "id": "wired",
-        "name": "Wired"
-      },
-      "author": "Eric Ravenscraft",
-      "title": "52 Last-Minute Christmas Gifts on Sale Now",
-      "description": "You can blame the supply chain for late packages, but there's still time to get some in before New Years.",
-      "url": "https://www.wired.com/story/last-minute-deals-and-christmas-gifts-2021/",
-      "urlToImage": "https://media.wired.com/photos/60e45f329c0558467e693ce0/191:100/w_1280,c_limit/Culture_Games_NintendoSwitchOLEDmodel_02.jpg",
-      "publishedAt": "2021-12-16T12:00:00Z",
-      "content": "This year is more challenging than most to get presents for your loved ones on time. Fortunately, even if you've waited till the last minute to start shopping, you still have some options. We've gath… [+15912 chars]"
-    },
-    {
-      "source": {
-        "id": "reuters",
-        "name": "Reuters"
-      },
-      "author": "Reuters Editorial",
-      "title": "New wave of COVID-19 brings global disruption - Reuters",
-      "description": "A growing number of U.S. colleges and universities moved final exams online, Apple shut down some of its stores temporarily and major North American sports leagues scrambled to control outbreaks as cases climb and the threat from the new Omicron coronavirus v…",
-      "url": "https://www.reuters.com/video/watch/idPB9g?now=true",
-      "urlToImage": "https://ajo.prod.reuters.tv/api/v2/img/61ba768ae4b09631b0e44528-1639609994164?location=LANDSCAPE",
-      "publishedAt": "2021-12-16T00:58:39Z",
-      "content": "Posted \r\nA growing number of U.S. colleges and universities moved final exams online, Apple shut down some of its stores temporarily and major North American sports leagues scrambled to control outbr… [+81 chars]"
-    },
-    {
-      "source": {
-        "id": "reuters",
-        "name": "Reuters"
+        "name": "NDTV News"
       },
       "author": null,
-      "title": "Intel to invest $7 bln in new plant in Malaysia, creating 9000 jobs - Reuters",
-      "description": "Intel Corp <a href=\"https://www.reuters.com/companies/INTC.O\" target=\"_blank\">(INTC.O)</a> will invest more than $7 billion to build a new chip-packaging and testing factory in Malaysia, Chief Executive Pat Gelsinger said on Thursday, expanding production in …",
-      "url": "https://www.reuters.com/technology/intel-invest-7-bln-new-plant-malaysia-creating-9000-jobs-2021-12-16/",
-      "urlToImage": "https://www.reuters.com/pf/resources/images/reuters/reuters-default.png?d=63",
-      "publishedAt": "2021-12-16T02:16:00Z",
-      "content": "KUALA LUMPUR, Dec 16 (Reuters) - Intel Corp (INTC.O) will invest more than $7 billion to build a new chip-packaging and testing factory in Malaysia, Chief Executive Pat Gelsinger said on Thursday, ex… [+1775 chars]"
+      "title": "\"If Girl Mature At 16...\": Samajwadi MP's Shocker On Marriage Age - NDTV",
+      "description": "Samajwadi Party chief Akhilesh Yadav later distanced himself from such comments, stressing that his party is progressive and has launched several schemes for the welfare and development of women and girls.",
+      "url": "https://www.ndtv.com/india-news/if-girl-mature-at-16-samajwadi-mps-shocker-on-marriage-age-2657421",
+      "urlToImage": "https://c.ndtvimg.com/2021-12/uscg67kg_syed-tufail-hasan_625x300_17_December_21.jpg",
+      "publishedAt": "2021-12-17T15:41:20Z",
+      "content": "Girls should be married when they attain the age of fertility, said MP Syed Tufail Hasan.\r\nNew Delhi: A day after the union cabinet approved the proposal to increase the legal age of marriage for wom… [+2640 chars]"
     },
     {
       "source": {
-        "id": "reuters",
-        "name": "Reuters"
+        "id": null,
+        "name": "Space.com"
+      },
+      "author": "Samantha Mathewson",
+      "title": "See the bright Comet Leonard near Venus in the night sky tonight! - Space.com",
+      "description": "You don't want to miss this pairing.",
+      "url": "https://www.space.com/comet-leonard-venus-skywatching-december-2021",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/6WFh2HXbvxwG7T2b3AhKM5-1200-80.png",
+      "publishedAt": "2021-12-17T14:59:03Z",
+      "content": "Skywatchers will be treated to a cosmic duet tonight (Dec. 17), as the brightest comet of 2021 and the brightest planet pair up for a night sky double feature. \r\nComet Leonard\r\n, also known as Comet … [+3682 chars]"
+    },
+    {
+      "source": {
+        "id": "the-times-of-india",
+        "name": "The Times of India"
+      },
+      "author": "TIMESOFINDIA.COM",
+      "title": "Diabetes: These three recurrent infections can be a sign of high blood sugar - Times of India",
+      "description": "The spike in the blood sugar level can affect the functioning of your organs and make you more susceptible to myriad health problems.",
+      "url": "https://timesofindia.indiatimes.com/life-style/health-fitness/health-news/diabetes-these-three-recurrent-infections-can-be-a-sign-of-high-blood-sugar/photostory/88339617.cms",
+      "urlToImage": "https://static.toiimg.com/photo/88339648.cms",
+      "publishedAt": "2021-12-17T14:40:00Z",
+      "content": "Thrush is a yeast infection that can grow in the different parts of the body like the armpits, finger, mouth and genital area. The condition leads to white discharge, akin to cottage cheese. In the c… [+347 chars]"
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
       },
       "author": null,
-      "title": "Futures rise as Fed wages war on inflation - Reuters",
-      "description": "U.S. stock index futures climbed on Thursday after the Federal Reserve announced a faster wind-down of its pandemic-era stimulus, calming some nerves around surging price pressures.",
-      "url": "https://www.reuters.com/markets/europe/futures-rise-fed-wages-war-inflation-2021-12-16/",
-      "urlToImage": "https://www.reuters.com/resizer/lhQ-twC7TbvohxHs3yV8paIBCi8=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/RWHGSYQEHNJCJNZULMENPMFYNA.jpg",
-      "publishedAt": "2021-12-16T12:27:00Z",
-      "content": "Dec 16 (Reuters) - U.S. stock index futures climbed on Thursday after the Federal Reserve announced a faster wind-down of its pandemic-era stimulus, calming some nerves around surging price pressures… [+2421 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "The Guardian"
-      },
-      "author": "Guardian staff reporter",
-      "title": "From irresistible nibbles to decadent desserts: our best recipes for Christmas Day",
-      "description": "A festive collection from our archive of favourite starters, main courses and puddingsA decadent starter and a godsend for cooks who like to get ahead. Continue reading...",
-      "url": "https://amp.theguardian.com/food/2021/dec/16/best-christmas-day-recipes-dinner-starter-dessert-leftovers",
-      "urlToImage": "https://i.guim.co.uk/img/media/fd55ca4aeeeb43941e4dab87039271904c13c8de/0_2779_5792_3475/master/5792.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b666024a7955ff1145f6871dc2d8e000",
-      "publishedAt": "2021-12-16T12:00:04Z",
-      "content": "A decadent starter and a godsend for cooks who like to get ahead.\r\nPhotograph: Louise Hagger/The Guardian.\r\nA set of festive snacks: caraway, spelt and parmesan grissini with aleppo chilli, to dip in… [+5920 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "CNET"
-      },
-      "author": "Sareena Dayaram",
-      "title": "iPhone 14 release date: When could we see Apple's next iPhone? - CNET",
-      "description": "We have some educated guesses based on Apple's iPhone launch history.",
-      "url": "https://www.cnet.com/tech/mobile/iphone-14-release-date-rumors/",
-      "urlToImage": "https://www.cnet.com/a/img/MeWswNPS3PlvngqR3HNot0jsV9M=/1200x630/2021/11/01/c6aaf7a5-b82d-4f35-a11e-7c7da348eec6/ogi-iphone.jpg",
-      "publishedAt": "2021-12-16T11:00:02Z",
-      "content": "Stephen Shankland/CNET\r\nThe iPhone 14 (or whatever Apple decides to call it) is still early in its development cycle, and a number of leaks doing the rounds should probably be taken with a grain of s… [+2298 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "CNET"
-      },
-      "author": "Lisa Eadicicco",
-      "title": "2022 smartphones people are already getting excited about - CNET",
-      "description": "If rumors are true, the OnePlus 10 Pro, Samsung Galaxy S22 Ultra and Galaxy S21 FE, as well as Apple's iPhone 14 Max and iPhone SE 3 are coming in 2022.",
-      "url": "https://www.cnet.com/tech/mobile/2022-smartphones-people-already-excited-about/",
-      "urlToImage": "https://www.cnet.com/a/img/QAayciBKF3PFmtl7lZIlIVsWIio=/1200x630/2021/11/05/55cbcd72-f211-412b-ba1d-1eac95c1da02/phone-with-bow-wrapped-gift-cnet-2021-013.jpg",
-      "publishedAt": "2021-12-16T08:00:06Z",
-      "content": "We're looking forward to what Apple and Samsung have in store for 2022. \r\nSarah Tew/CNET\r\nWe are only a few weeks away from the new year, and many of the smartphones that debuted this fall easily mad… [+9209 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "The Siasat Daily"
-      },
-      "author": "IANS",
-      "title": "Disney Plus adds support for Apple's new SharePlay feature - The Siasat Daily",
-      "description": "<ol><li>Disney Plus adds support for Apple's new SharePlay feature  The Siasat Daily\r\n</li><li>Disney+ Now Supports Apple's SharePlay on iPhone, iPad, Apple TV  iPhone in Canada\r\n</li><li>iOS 15.1 SharePlay support finally makes its way to Disney+  MobileSyru…",
-      "url": "https://www.siasat.com/disney-plus-adds-support-for-apples-new-shareplay-feature-2242300/",
-      "urlToImage": "https://cdn.siasat.com/wp-content/uploads/2021/12/Disney-1.jpg",
-      "publishedAt": "2021-12-16T05:37:00Z",
-      "content": "San Francisco: Disney has updated its subscription video on demand (SVOD) mobile app Disney Plus streaming with support for Apple's SharePlay feature.\r\nWith support for SharePlay, Disney Plus subscri… [+1250 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Freakonomics.com"
-      },
-      "author": "Stephen J. Dubner",
-      "title": "“The Art Market Is in Massive Disruption.” (Ep. 486)",
-      "description": "Is art really meant to be an “asset class”? Will the digital revolution finally democratize a market that just keeps getting more elitist? And what will happen to the last painting Alice Neel ever made? (Part 3 of “The Hidden Side of the Art Market.”)\nThe pos…",
-      "url": "https://freakonomics.com/podcast/art-market-part-3/",
-      "urlToImage": "https://freakonomics.com/wp-content/uploads/2020/08/fr.fbthumbnail.png",
-      "publishedAt": "2021-12-16T04:00:22Z",
-      "content": "Is art really meant to be an asset class? Will the digital revolution finally democratize a market that just keeps getting more elitist? And what will happen to the last painting Alice Neel ever made… [+38607 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Xataka.com"
-      },
-      "author": "Javier Pastor",
-      "title": "Europa no quiere que Google, Amazon, Facebook o Apple se pasen de la raya y aprueba la Digital Markets Act para limitar su poder",
-      "description": "La Digital Markets Act (DMA) está más cerca de entrar en acción. La nueva serie de medidas fue desvelada por Magrethe Vestager en diciembre de 2020 y planteaba una serie de medidas para restringir el radio de acción de las grandes empresas tecnológicas.\n<!-- …",
-      "url": "https://www.xataka.com/empresas-y-economia/europa-no-quiere-que-google-amazon-facebook-apple-se-pasen-raya-aprueba-digital-markets-act-para-limitar-su-poder",
-      "urlToImage": "https://i.blogs.es/c23377/captura-de-pantalla-2021-12-16-a-las-9.58.59/840_560.jpeg",
-      "publishedAt": "2021-12-16T12:00:31Z",
-      "content": "La Digital Markets Act (DMA) está más cerca de entrar en acción. La nueva serie de medidas fue desvelada por Magrethe Vestager en diciembre de 2020 y planteaba una serie de medidas para restringir el… [+3997 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Xataka.com"
-      },
-      "author": "Javier Marquez",
-      "title": "Microsoft y Dell quieren hacer los portátiles más reparables, y esa es una buena noticia para toda la industria",
-      "description": "Cada año se generan en el mundo más de 53 millones de toneladas de residuos electrónicos. Si en lugar de reemplazar los dispositivos cada vez que se rompen o necesitan nuevas características pudiéramos repararlos o actualizarlos para seguir utilizándolos logr…",
-      "url": "https://www.xataka.com/ordenadores/microsoft-dell-quieren-hacer-portatiles-reparables-esa-buena-noticia-para-toda-industria",
-      "urlToImage": "https://i.blogs.es/66a694/dell-luna-1/840_560.jpeg",
-      "publishedAt": "2021-12-16T07:31:24Z",
-      "content": "Cada año se generan en el mundo más de 53 millones de toneladas de residuos electrónicos. Si en lugar de reemplazar los dispositivos cada vez que se rompen o necesitan nuevas características pudiéram… [+5420 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "The Atlantic"
-      },
-      "author": "The Atlantic",
-      "title": "The Experiment Podcast: In Between Pro-life and Pro-choice",
-      "description": "Rebecca Shrader had always thought of abortion as a black-and-white issue. But when she became pregnant, she started to see the gray.",
-      "url": "https://www.theatlantic.com/podcasts/archive/2021/12/pro-life-christian-changed-views-abortion/621028/?utm_source=feed",
+      "title": "Punjab Assembly elections | BJP, Amarinder Singh's Punjab Lok Congress announce alliance - The Hindu",
+      "description": null,
+      "url": "https://news.google.com/__i/rss/rd/articles/CBMinAFodHRwczovL3d3dy50aGVoaW5kdS5jb20vbmV3cy9uYXRpb25hbC9vdGhlci1zdGF0ZXMvcHVuamFiLWFzc2VtYmx5LWVsZWN0aW9ucy1ianAtYW1hcmluZGVyLXNpbmdocy1wdW5qYWItbG9rLWNvbmdyZXNzLWFubm91bmNlLWFsbGlhbmNlL2FydGljbGUzNzk3ODM0NC5lY2XSAaEBaHR0cHM6Ly93d3cudGhlaGluZHUuY29tL25ld3MvbmF0aW9uYWwvb3RoZXItc3RhdGVzL3B1bmphYi1hc3NlbWJseS1lbGVjdGlvbnMtYmpwLWFtYXJpbmRlci1zaW5naHMtcHVuamFiLWxvay1jb25ncmVzcy1hbm5vdW5jZS1hbGxpYW5jZS9hcnRpY2xlMzc5NzgzNDQuZWNlL2FtcC8?oc=5",
       "urlToImage": null,
-      "publishedAt": "2021-12-16T09:00:00Z",
-      "content": "Listen and subscribe: Apple Podcasts | Spotify | Stitcher | Google Podcasts\r\nRebecca Shrader had always thought that abortion was morally wrong. As a devout Baptist Christian, she volunteered at a cl… [+1194 chars]"
+      "publishedAt": "2021-12-17T14:30:58Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Sentinel Assam"
+      },
+      "author": "Sentinel Digital Desk",
+      "title": "NASAs Perseverance Rover Discovers Organic Chemicals On Mars - Sentinelassam - The Sentinel Assam",
+      "description": "The scientists have come to a conclusion that life might have existed in Mars once upon a time....",
+      "url": "https://www.sentinelassam.com/science-and-technology/nasas-perseverance-rover-discovers-organic-chemicals-on-mars-568380",
+      "urlToImage": "https://assets.sentinelassam.com/h-upload/2021/12/17/283824-mars-perseverance-rover-sample-collection.jpg",
+      "publishedAt": "2021-12-17T14:29:28Z",
+      "content": "Washington DC: After the Perseverance rover landed on the surface of Mars in February this year, the six-wheeled rover has made a fascinating discovery.\r\nThe Scientists at NASA's Perseverence Mars Ro… [+2124 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "India Today"
+      },
+      "author": null,
+      "title": "Sony sale offers discounts on Bravia TVs, headphones, speakers, cameras and more - India Today",
+      "description": "Sony has put up a sale to mark the ongoing festive period with a range of discounts on its products. Right from TVs to TWS earbuds, there is a saving to be made across online and offline channels. Here is a look at some of the offers under the Sony sale.",
+      "url": "https://www.indiatoday.in/technology/news/story/sony-sale-offers-discounts-on-bravia-tvs-headphones-speakers-cameras-and-more-1889106-2021-12-17",
+      "urlToImage": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202112/Sony_TV-647x363.jpeg?av_z2sS1RDQoP0e_wbMi5_k4SqjEICqk",
+      "publishedAt": "2021-12-17T14:25:21Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Bollywood Life"
+      },
+      "author": "BollywoodLife",
+      "title": "Ananya Panday apes Urfi Javed in her new 'fruit and net' monokini look; takes a self-deprecating dig before t - Bollywood Life",
+      "description": "Ananya Panday apes Urfi Javed in her new 'fruit and net' monokini look; takes a self-deprecating dig before trolls can roast her - view pics Also get bollywood actors, actress, movie, parties & event photos at Bollywoodlife.com",
+      "url": "https://www.bollywoodlife.com/photos/ananya-panday-apes-urfi-javed-in-her-new-fruit-and-net-monokini-look-takes-a-self-deprecating-dig-before-trolls-can-roast-her-view-pics-bollywood-news-1971048/",
+      "urlToImage": "https://st1.bollywoodlife.com/wp-content/uploads/2021/12/Ananya_Panday_New_Hot_Monokini_Photos_Instagram_Fruit_Netting_1-600x315.jpg",
+      "publishedAt": "2021-12-17T14:21:18Z",
+      "content": "Ananya Panday has uploaded a bunch of pics in a scorching-white monokini, and needless to say, her fans are going to be mighty impressed. However, thats not all that grabs attention. Said scorching-w… [+470 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Hindustan Times"
+      },
+      "author": "Amritanshu Mukherjee",
+      "title": "Top smartphones launching in 2022: iPhone 14, Galaxy A53, Redmi Note 11 Pro, etc - HT Tech",
+      "description": "Top smartphones upcoming in 2022 that we look forward to from Xiaomi, Samsung, Apple, Google and more.",
+      "url": "https://tech.hindustantimes.com/mobile/news/top-smartphones-upcoming-in-2022-iphone-14-galaxy-a53-redmi-note-11-pro-etc-71639744828764.html",
+      "urlToImage": "https://images.hindustantimes.com/tech/img/2021/12/17/1600x900/iPhone_14_Pro_Max_leak_2_1631155037083_1639749666123.jpg",
+      "publishedAt": "2021-12-17T14:10:49Z",
+      "content": "Top smartphones upcoming in 2022: With 2022 almost around the corner, tech companies are preparing to release their next generation ultimate flagship smartphones. In fact, Xiaomi will be releasing it… [+2574 chars]"
+    },
+    {
+      "source": {
+        "id": "the-times-of-india",
+        "name": "The Times of India"
+      },
+      "author": "Bharat Sharma",
+      "title": "Earth's First True Millipede Species Discovered, A Creature With 1,306 Legs! - India Times",
+      "description": "The first true millipede has been discovered by scientists in one of Australia's mining regions. The blind millipede has an impressive 1,306 legs - the most legs for any known animal ever.The pale-coloured millipede is 3.5 inches (95 mm) long and 0.95 mm wide…",
+      "url": "https://www.indiatimes.com/technology/science-and-future/earth-millipede-species-discovery-557043.html",
+      "urlToImage": "https://im.indiatimes.in/content/2021/Dec/Social-image-3_61bc90711616b.jpg",
+      "publishedAt": "2021-12-17T14:00:16Z",
+      "content": "The first true millipede has been discovered by scientists in one of Australia's mining regions. The blind millipede has an impressive 1,306 legs - the most legs for any known animal ever.\r\nThe pale-… [+2311 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "NDTV News"
+      },
+      "author": null,
+      "title": "What Omicron's Rapid Spread In UK Could Mean For India. Centre Explains - NDTV",
+      "description": "Omicron is spreading at a very fast pace in India and the scale of infections in the UK and France could translate to lakhs of cases a day in the country, the government's Covid task force chief said today.",
+      "url": "https://www.ndtv.com/india-news/what-omicrons-rapid-spread-in-uk-could-mean-for-india-centre-explains-2656815",
+      "urlToImage": "https://c.ndtvimg.com/2021-12/sinl279c_covid-crowd-patna-pti_625x300_17_December_21.jpg",
+      "publishedAt": "2021-12-17T13:50:00Z",
+      "content": "The Centre advised caution on unnecessary travel, crowds, and New Year festivities (File)\r\nNew Delhi: Omicron is spreading at a very fast pace in India and the scale of infections in the UK and Franc… [+1723 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "NDTV News"
+      },
+      "author": "NDTV Sports Desk",
+      "title": "Rohit Sharma Gives \"Priceless Lessons\" To India U19 Cricketers At The NCA In Bengaluru. See Pics - NDTVSports.com",
+      "description": "Taking to their Twitter, the Board of Control for Cricket in India (BCCI) shared some pictures from the NCA with Rohit Sharma interacting with India U19 players.",
+      "url": "https://sports.ndtv.com/cricket/rohit-sharma-gives-priceless-lessons-to-india-u19-cricketers-at-the-nca-in-bengaluru-see-pics-2657061",
+      "urlToImage": "https://c.ndtvimg.com/2021-12/rrcq9d4g_rohit-u19_625x300_17_December_21.jpg",
+      "publishedAt": "2021-12-17T13:14:48Z",
+      "content": "Newly-appointed India ODI and T20I captain Rohit Sharma spent some quality time with India's U19 cricketers at the National Cricket Academy in Bengaluru. The opening batter who is currently undergoin… [+1336 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Indian Express"
+      },
+      "author": "Express Web Desk",
+      "title": "North Korea bans citizens from laughing, drinking and shopping for 11 days. Here's why - The Indian Express",
+      "description": "Kim Jong-il, the second of the Kim family dynasty, ruled North Korea for 17 years until his death on December 17, 2011.",
+      "url": "https://indianexpress.com/article/world/north-korea-ban-laughing-drinking-kim-jong-un-7677975/",
+      "urlToImage": "https://images.indianexpress.com/2021/12/North-Korea.jpg",
+      "publishedAt": "2021-12-17T13:05:00Z",
+      "content": "North Korea has banned its citizens from laughing, drinking and shopping from Friday onwards as part of the 11-day mourning on the 10th anniversary of former leader and Kim Jong Un's father, Kim Jong… [+2202 chars]"
+    },
+    {
+      "source": {
+        "id": "the-times-of-india",
+        "name": "The Times of India"
+      },
+      "author": null,
+      "title": "Omicron: South Africa says vaccines, prior infection help mildness of Covid cases - Times of India",
+      "description": "Rest of World News:  South Africa's health minister said on Friday that the government believed that vaccines and high levels of prior Covid-19 infection were helping to",
+      "url": "https://timesofindia.indiatimes.com/world/rest-of-world/omicron-south-africa-says-vaccines-prior-infection-help-mildness-of-covid-cases/articleshow/88339786.cms",
+      "urlToImage": "https://static.toiimg.com/thumb/msid-88343224,width-1070,height-580,imgsize-34626,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "publishedAt": "2021-12-17T12:58:00Z",
+      "content": "Omicron: South Africa says vaccines, prior infection help mildness of Covid cases"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Indian Express"
+      },
+      "author": "Express Web Desk",
+      "title": "'Indefensible': Priyanka Gandhi slams Karnataka Congress MLA over rape remark - The Indian Express",
+      "description": "During an Assembly session on Thursday, K R Ramesh Kumar, a former speaker of the Karnataka House, said, \"There's a saying… when rape is inevitable, lie down and enjoy it. That's exactly the position into which you are.”",
+      "url": "https://indianexpress.com/article/india/rape-heinous-crime-priyanka-gandhi-slams-karnataka-cong-mla-7677995/",
+      "urlToImage": "https://images.indianexpress.com/2021/12/Priyanka-Ramesh-Kumar.jpg",
+      "publishedAt": "2021-12-17T12:48:37Z",
+      "content": "“I wholeheartedly condemn the statement made earlier today by Sri K R Ramesh Kumar. It is inexplicable how anyone can ever utter such words, they are indefensible. Rape is a heinous crime. Full stop,… [+1390 chars]"
+    },
+    {
+      "source": {
+        "id": "the-times-of-india",
+        "name": "The Times of India"
+      },
+      "author": null,
+      "title": "Social Humour: Twitter bursts into memes as India thrashes Pakistan 3-1 in hockey - Times of India",
+      "description": "Humour News: DISCLAIMER: This is a compilation of humour being shared by netizens around the world.",
+      "url": "https://timesofindia.indiatimes.com/humour/social-humour/social-humour-twitter-bursts-into-memes-as-india-thrashes-pakistan-3-1-in-hockey/articleshow/88342769.cms",
+      "urlToImage": "https://static.toiimg.com/thumb/msid-88342837,width-1070,height-580,imgsize-133222,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "publishedAt": "2021-12-17T12:40:00Z",
+      "content": "There was already a fear of losing Pakistan, BCZE Tightened security around the TV #HeroACT2021 https://t.co/BeblyYZJXL\r\n— Manjul Khattar (@manjul_k1) 1639742276000"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "News18"
+      },
+      "author": "Education and Careers Desk",
+      "title": "Delhi to Reopen Schools for Classes 6 to 12 from Tomorrow, Colleges, Universities Allowed Too - News18",
+      "description": "Delhi school reopening from December 18 for classes 6 to 12, days ahead of winter breaks. Colleges and universities too allowed to reopen.",
+      "url": "https://www.news18.com/news/education-career/delhi-to-reopen-schools-for-classes-6-to-12-from-tomorrow-4565807.html",
+      "urlToImage": "https://images.news18.com/ibnlive/uploads/2021/12/school-24-163974252116x9.jpg",
+      "publishedAt": "2021-12-17T12:03:00Z",
+      "content": "After being shut because of the Covid-19 led lockdown followed by pollution, the Delhi government will now reopen schools for students in classes 6 to 12 from tomorrow, December 18 onwards. This fall… [+2209 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "CNBCTV18"
+      },
+      "author": "CNBCTV18.com",
+      "title": "Stock Market Highlights: Sensex, Nifty50 hit over 1-week closing lows; Nifty IT bucks trend, up 1% - CNBCTV18",
+      "description": "Stock Market Highlights: Indian equity benchmarks Sensex and Nifty50 suffered sharp losses on Friday amid a sell-off in global markets, amid concerns about policy tightening and the Omicron variant of COVID around the globe. Barring IT, losses across sectors …",
+      "url": "https://www.cnbctv18.com/market/stocks/stock-market-news-live-updates-bse-sensex-nse-nifty50-bank-nifty-bitcoin-price-gold-rate-rategain-ipo-listing-omicron-it-stocks-tcs-infosys-11846072.htm",
+      "urlToImage": "https://images.cnbctv18.com/wp-content/uploads/2021/02/BSE.jpg",
+      "publishedAt": "2021-12-17T11:56:00Z",
+      "content": "Brace for more downside, valuations have been at alarming levels: Ambit Capital's Dhiraj Agarwal\r\nDhiraj Agarwal, Co-Head Equities at Ambit Capital, believes the primary reason behind the market sell… [+880 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "NDTV News"
+      },
+      "author": null,
+      "title": "TV Actor Abhinav Choudhary's Father, Diagnosed With Depression And Anxiety Recently, Goes Missing - NDTV Movies",
+      "description": "\"He didn't have his phone or any money,\" said the actor about his father",
+      "url": "https://www.ndtv.com/entertainment/tv-actor-abhinav-choudharys-father-diagnosed-with-depression-and-anxiety-recently-goes-missing-2656811",
+      "urlToImage": "https://c.ndtvimg.com/2021-12/8vqk7k0g_abhinav-choudhary_625x300_17_December_21.jpg",
+      "publishedAt": "2021-12-17T11:31:44Z",
+      "content": "Abhinav Choudhary shared this photo. (Image courtesy: abhinavchoudharyofficial )\r\nHighlights\r\n<ul><li>The actor's father has been missing for over three days now \r\n</li><li>His name is Parasnath Chou… [+2273 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Livemint"
+      },
+      "author": "Livemint",
+      "title": "Restrictive measures for districts with Covid positivity rate over 5%: Govt amid Omicron scare - Mint",
+      "description": "The government had earlier said that with Omicron spreading fast, we need to avoid nonessential travel, mass gatherings and new year celebrations need to be at low intensity.",
+      "url": "https://www.livemint.com/news/india/restrictive-measures-for-districts-with-covid-positivity-rate-over-5-govt-amid-omicron-scare-11639739697151.html",
+      "urlToImage": "https://images.livemint.com/img/2021/12/17/600x338/PTI12-16-2021-000086A-0_1639726873819_1639740501613.jpg",
+      "publishedAt": "2021-12-17T11:29:14Z",
+      "content": "The Indian government declared that districts with over 5% Covid positivity rate will have to mandatorily ensure that restrictive measures are followed unless the rate comes down below 5% .\r\nThe dist… [+1034 chars]"
     }
   ]
 }

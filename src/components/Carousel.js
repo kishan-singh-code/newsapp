@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import img_1 from "./img/5.jpg";
-import img_2 from "./img/2.jpg";
-import img_3 from "./img/3.jpg";
+// import img_2 from "./img/2.jpg";
+// import img_3 from "./img/3.jpg";
 export class Carousel extends Component {
     render() {
         return (
@@ -35,7 +35,7 @@ export class Carousel extends Component {
                     ></button>
                 </div>
                 <div className="carousel-inner">
-                    <div className="carousel-item active" data-bs-interval="1800">
+                    <div className="carousel-item active" >
                         <img
                             id="imageidi"
                             src={img_1}
@@ -49,7 +49,7 @@ export class Carousel extends Component {
                             </p>
                         </div>
                     </div>
-                    <div className="carousel-item" data-bs-interval="2800">
+                    {/* <div className="carousel-item" data-bs-interval="2800">
                         <img id="imageid" src={img_2} className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Second slide label</h5>
@@ -66,7 +66,7 @@ export class Carousel extends Component {
                                 Some representative placeholder content for the third slide.
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <button
                     className="carousel-control-prev"

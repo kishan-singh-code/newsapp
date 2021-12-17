@@ -5,6 +5,11 @@ button {
   background: transparent;
 }
 
+.navbar-brand {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
 button:hover {
   cursor: pointer;
 }

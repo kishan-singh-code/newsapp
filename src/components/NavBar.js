@@ -1,12 +1,13 @@
 import React, { Component } from "react";
-
+import img_1 from "./img/nj2.gif";
 export class NavBar extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            Navbar
+            <img src={img_1} width="60" height="60" className="mx-2" alt="..." />
+            News Express
           </a>
           <button
             className="navbar-toggler"
@@ -34,7 +35,7 @@ export class NavBar extends Component {
             </ul>
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-              <label className="form-check-label" for="flexSwitchCheckDefault">Enable Dark mode</label>
+              <label className="form-check-label text-light" htmlFor="flexSwitchCheckDefault">Enable Dark mode</label>
             </div>
           </div>
         </div>
