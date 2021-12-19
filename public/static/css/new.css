@@ -184,6 +184,10 @@ iframe {
   }
 }
 
+.mar_top {
+  margin-top: auto;
+}
+
 /* .lol {
     display: none!important;
 } */

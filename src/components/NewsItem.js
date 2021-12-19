@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export class NewsItem extends Component {
   render() {
-    let { title, description, imageUrl, newsUrl, author, name } = this.props;
+    let { title, description, imageUrl, newsUrl, author, name, time } = this.props;
     return (
       <div>
         <div className="card border-info">
@@ -21,7 +21,7 @@ export class NewsItem extends Component {
               />
               <div className="user-info">
                 <h6>{author}</h6>
-                <small style={{ fontSize: "0.75rem" }}>2h ago</small>
+                <small style={{ fontSize: "0.75rem" }}>{(new Date(time).toGMTString()).slice(0, -7)}</small>
               </div>
               <div id="flex_beta" className="container-contact100-form-btn">
                 <div className="wrap-contact100-form-btn">
