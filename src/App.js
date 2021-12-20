@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import News from "./components/News";
 import Carousel from "./components/Carousel";
 import LoadingBar from 'react-top-loading-bar'
+// import { Scrollbars } from 'react-custom-scrollbars';
 
 
 import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
@@ -19,7 +20,9 @@ const App = () => {
 
 
   return (
+    // <Scrollbars style={{ width: "100%", height: "2000px" }}>
     <div>
+
       <Router>
         <NavBar />
         <LoadingBar
@@ -41,6 +44,8 @@ const App = () => {
         </Switch>
       </Router>
     </div>
+    // </Scrollbars>
+
   );
 
 }

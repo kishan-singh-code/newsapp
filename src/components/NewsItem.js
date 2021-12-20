@@ -5,7 +5,7 @@ const NewsItem = (props) => {
   let { title, description, imageUrl, newsUrl, author, name, time } = props;
   return (
     <div>
-      <div className="card border-info">
+      <div className="card h-100">
         <div className="pill_red">
           <span className="badge rounded-pill bg-danger">{name}</span>
         </div>

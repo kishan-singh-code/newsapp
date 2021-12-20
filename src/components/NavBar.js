@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top opacity-75 ">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <img src={img_1} width="60" height="60" className="mx-2" alt="..." />
@@ -39,13 +40,36 @@ const NavBar = () => {
             <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/sports">Sports</Link></li>
             <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/technology">Technology</Link></li>
           </ul>
-          <div className="form-check form-switch">
-            <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-            <label className="form-check-label text-light" htmlFor="flexSwitchCheckDefault">Enable Dark mode</label>
+          {/* <div className="form-check form-switch">
+              <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+              <label className="form-check-label text-light" htmlFor="flexSwitchCheckDefault">Enable Dark mode</label>
+            </div> */}
+          <div className="poggleWrapper ">
+            <input type="checkbox" className="dn" id="dn" />
+            <label htmlFor="dn" className="poggle">
+              <span className="poggle__handler">
+                <span className="crater crater--1"></span>
+                <span className="crater crater--2"></span>
+                <span className="crater crater--3"></span>
+              </span>
+              <span className="star star--1"></span>
+              <span className="star star--2"></span>
+              <span className="star star--3"></span>
+              <span className="star star--4"></span>
+              <span className="star star--5"></span>
+              <span className="star star--6"></span>
+            </label>
           </div>
+
+
+
         </div>
+
       </div>
+
     </nav>
+
+
   );
 
 }

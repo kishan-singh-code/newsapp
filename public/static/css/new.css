@@ -1,3 +1,38 @@
+body {
+  background: #fff5c0;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(45deg, #00dbde, #fc00ff);
+  border-radius: 10px;
+}
+/*--------------------------------------------------------------------------- */
+
+.card {
+  transition: 0.3s;
+  border: 0.1px solid #0dcaf0 !important;
+  /* border-radius: 12px; */
+}
+.card:hover {
+  /* border: 2px solid #42f00d !important; */
+  transform: scale(0.989, 0.989);
+  /* box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),-5px -5px 30px 15px rgba(0, 0, 0, 0.22); */
+  /* border: 2px solid #0df020 !important; */
+  /* border-color: #0dcaf0 !important; */
+
+  box-shadow: 0 2px 20px rgb(0 0 0 / 70%);
+  /* border-radius: 12px; */
+}
+/* ------------------------------------------------------------------------- */
 /* button part */
 button {
   outline: none !important;
@@ -77,7 +112,7 @@ iframe {
   color: #fff;
   line-height: 1.8;
   font-weight: 350;
-  border: 1.5px solid #0dcaf0 !important;
+  /* border: 1.5px solid #0dcaf0 !important; */
   /*border-color: #13849b !important;*/
   border-radius: 25px;
 }
@@ -112,7 +147,7 @@ iframe {
 /* button part ends */
 .card {
   border-radius: 10px;
-  box-shadow: 0 2px 20px rgb(0 0 0 / 30%);
+  /* box-shadow: 0 2px 20px rgb(0 0 0 / 30%); */
 }
 
 .user {
@@ -129,7 +164,7 @@ iframe {
   width: 40px;
   height: 40px;
   margin-right: 10px;
-  border: 1.5px solid #0dcaf0 !important;
+  border: 1px solid #0dcaf0 !important;
 }
 .user-info h5 {
   margin: 0;
@@ -141,6 +176,9 @@ iframe {
 .card-img-top {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  object-fit: cover !important;
+  height: 190px !important;
+  width: 100%;
 }
 
 .translate-middle {

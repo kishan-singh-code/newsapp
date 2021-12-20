@@ -60,8 +60,8 @@ const News = (props) => {
 
 
     return (
-        <div className="container mb-5">
-            <h2 className="my-3">
+        <div className="container mb-5 pb-5">
+            <h2 className="my-3 ">
                 Top News from{" "}
                 {props.category.charAt(0).toUpperCase() +
                     props.category.slice(1)}
