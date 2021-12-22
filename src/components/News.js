@@ -46,7 +46,7 @@ const News = (props) => {
 
     const fetchMoreData = async () => {
 
-        // let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apikey}&page=${page+1}`;
+        // let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apikey}&page=${page + 1}`;
         let url = `http://localhost:3000/in&page=${page + 1}`;
         setPage(page + 1)
         let data = await fetch(url);
@@ -60,7 +60,7 @@ const News = (props) => {
 
 
     return (
-        <div className="container mb-5 pb-5">
+        <div className="container mb-5 pb-5 cont_size">
             <h2 className="my-3 ">
                 Top News from{" "}
                 {props.category.charAt(0).toUpperCase() +

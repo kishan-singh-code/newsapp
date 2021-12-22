@@ -6,7 +6,7 @@ const Circle = () => {
         <div>
 
             <div className='text-center'>
-                <img src={img_1} width="50" height="50" className="mx-4 mb-4 mt-5" alt="..." />
+                <img src={img_1} width="50" height="50" className="mx-4 mt-5" alt="..." />
             </div>
         </div>
     )
