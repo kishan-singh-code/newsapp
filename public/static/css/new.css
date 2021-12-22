@@ -1,6 +1,19 @@
 body {
   background: #fff5c0;
 }
+
+#p_desc {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: medium;
+}
+h6 {
+  /* text-align: justify; */
+  text-justify: inter-word;
+  font-size: large;
+  text-align: justify;
+}
+
 ::-webkit-scrollbar-track {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -18,13 +31,13 @@ body {
 /*--------------------------------------------------------------------------- */
 
 .card {
-  transition: 0.3s;
+  transition: 0.2s;
   border: 0.1px solid #0dcaf0 !important;
   /* border-radius: 12px; */
 }
 .card:hover {
   /* border: 2px solid #42f00d !important; */
-  transform: scale(0.989, 0.989);
+  transform: scale(0.9999, 0.9999);
   /* box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),-5px -5px 30px 15px rgba(0, 0, 0, 0.22); */
   /* border: 2px solid #0df020 !important; */
   /* border-color: #0dcaf0 !important; */
@@ -146,7 +159,7 @@ iframe {
 
 /* button part ends */
 .card {
-  border-radius: 10px;
+  border-radius: 11px;
   /* box-shadow: 0 2px 20px rgb(0 0 0 / 30%); */
 }
 
@@ -285,4 +298,10 @@ iframe {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
+}
+
+/* ------------------ */
+
+.pill_light {
+  background-color: #ff828e !important;
 }

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import NewsItem from "./NewsItem";
-import Spinner from "./Spinner";
+// import Spinner from "./Spinner";
 import PropTypes from "prop-types";
 import InfiniteScroll from "react-infinite-scroll-component";
-import Circle from "./Circle";
+// import Circle from "./Circle";
+import Place from "./Place";
+import ButtomPlace from "./ButtomPlace";
 
 
 const News = (props) => {
@@ -30,7 +32,7 @@ const News = (props) => {
             setArticles(parsedData.articles)
             setTotalResults(parsedData.totalResults)
             setLoading(false)
-        }, 2000);
+        }, 5000);
 
         props.setProgress(100)
     }
@@ -55,7 +57,7 @@ const News = (props) => {
             setArticles(articles.concat(parsedData.articles))
             setTotalResults(parsedData.totalResults)
 
-        }, 2000);
+        }, 5000);
     };
 
 
@@ -66,13 +68,13 @@ const News = (props) => {
                 {props.category.charAt(0).toUpperCase() +
                     props.category.slice(1)}
             </h2>
-            {loading && <Spinner />}
+            {loading && <Place />}
 
             <InfiniteScroll
                 dataLength={articles.length}
                 next={fetchMoreData}
                 hasMore={articles.length !== totalResults}
-                loader={<Circle />}
+                loader={<ButtomPlace />}
             >
                 <div className="container">
                     <div className="row row-cols-1 row-cols-md-3 g-4 mar_top">

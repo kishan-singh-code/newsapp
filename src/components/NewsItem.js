@@ -12,8 +12,8 @@ const NewsItem = (props) => {
         <img src={imageUrl} className="card-img-top" alt="..." />
         <div className="card-body">
           <span className="badge rounded-pill bg-primary mb-3">{name}</span>
-          <h5 className="card-title">{title}</h5>
-          <p className="card-text mb-4">{description}</p>
+          <h6 className=" card-title">{title}</h6>
+          <p className="card-text mb-4" id="p_desc">{description}</p>
           <div className="user">
             <img
               src={imageUrl}
