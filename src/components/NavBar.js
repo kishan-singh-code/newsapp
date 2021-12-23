@@ -1,27 +1,31 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 // import img_1 from "./img/nj1.gif";
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
-  const [offset, setOffset] = useState(0);
+const NavBar = (props) => {
 
-
-
-  useEffect(() => {
-    window.onscroll = () => {
-      setOffset(window.pageYOffset)
-    }
-  }, []);
 
 
 
   return (
     // {`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
-    <nav className={`navbar navbar-expand-lg navbar-dark fixed-top love ${offset > 100 ? " stick_nav" : ""}`}>
+    <nav className={`navbar navbar-expand-lg fixed-top love ${props.winsiz > 991 ? (props.offset > 100 ? (props.mode === "light" ? "navbar-light stick_nav" : "navbar-dark stick_nav") : "navbar-dark") : "navbar-dark"}`}
+      style={{
+        background: props.mode === "dark" ? (props.offset > 100 ? "#000000" : "") : "",
+        boxShadow: props.offset > 100 ? (props.mode === "dark" ? "0px 3px 15px 0px rgba(255, 255, 255, 0.3)" : "0px 3px 15px 0px rgba(0, 0, 0, 0.3)") : ""
+      }}
+
+    // box-shadow: 0px 3px 15px 0px rgba(255, 255, 255, 0.3);
+    >
+      {/* className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`} */}
+      {/* className={`form-check form-switch text-${props.mode === "light" ? "dark" : "light"}`} */}
+
+
+
       <div className="container-fluid">
         <Link className="navbar-brand ms-4 fw-bold" to="/">
 
-          {/* <img src={img_1} width={`${offset > 100 ? "35" : "60"}`} height={`${offset > 100 ? "35" : "60"}`} className="mx-2" alt="..." style={{ transition: "all 0.3s ease" }} /> */}
+          {/* <img src={img_1} width={`${props.offset > 100 ? "35" : "60"}`} height={`${props.offset > 100 ? "35" : "60"}`} className="mx-2" alt="..." style={{ transition: "all 0.3s ease" }} /> */}
           News Express
         </Link>
         <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +52,7 @@ const NavBar = () => {
             </div> */}
 
           <div className="poggleWrapper ">
-            <input type="checkbox" className="dn" id="dn" />
+            <input type="checkbox" className="dn" id="dn" onClick={props.toggleMode} />
             <label htmlFor="dn" className="poggle">
               <span className="poggle__handler">
                 <span className="crater crater--1"></span>

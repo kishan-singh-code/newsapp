@@ -1,33 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import img_1 from "./img/5.jpg";
 // import img_2 from "./img/2.jpg";
 // import img_3 from "./img/3.jpg";
-const Carousel = () => {
-  // #imageidi {
-  //   object-fit: cover;
-  //   height: 510px;
-  //   width: 100%;
-  // }
-  const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-
-
-  const [winsiz, setWinsiz] = useState(vw);
-
-  useEffect(() => {
-    window.onresize = () => {
-      setWinsiz(window.screen.width)
-    }
-  }, []);
-
-  console.log(winsiz);
-
-  // const divStyle = {
-  //   objectFit: 'cover',
-  //   height: '510px',
-  //   width: '100%',
-  // };
-
-
+const Carousel = (props) => {
 
   return (
     <div
@@ -67,7 +42,7 @@ const Carousel = () => {
             className="d-block w-100"
             alt="..." style={{
               objectFit: 'cover',
-              height: (winsiz > 990 ? Math.ceil(winsiz / 2.5) : (winsiz > 500 ? Math.ceil(winsiz / 2) : Math.ceil(winsiz / 1.7))).toString() + 'px',
+              height: (props.winsiz > 990 ? Math.ceil(props.winsiz / 2.5) : (props.winsiz > 500 ? Math.ceil(props.winsiz / 2) : Math.ceil(props.winsiz / 1.7))).toString() + 'px',
             }}
           />
           <div className="carousel-caption d-none d-md-block">

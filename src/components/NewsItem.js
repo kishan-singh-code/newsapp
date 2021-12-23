@@ -3,9 +3,14 @@ import React from "react";
 const NewsItem = (props) => {
 
   let { title, description, imageUrl, newsUrl, author, name, time } = props;
+
+
   return (
     <div>
-      <div className="card h-100">
+      <div className={`card h-100 card_hover_${props.mode === "light" ? "white" : "black"} text-${props.mode === "light" ? "dark" : "white"} bg-${props.mode === "light" ? "light" : "dark"
+        }`} >
+
+
         <div className="pill_red">
           <span className="badge rounded-pill bg-danger">{name}</span>
         </div>
@@ -21,7 +26,8 @@ const NewsItem = (props) => {
             />
             <div className="user-info">
               <h6>{author}</h6>
-              <small style={{ fontSize: "0.75rem" }}>{(new Date(time).toGMTString()).slice(0, -7)}</small>
+              <small className={`text-${props.mode === "light" ? "dark" : "light"
+                }`} style={{ fontSize: "0.75rem" }}>{(new Date(time).toGMTString()).slice(0, -7)}</small>
             </div>
             <div id="flex_beta" className="container-contact100-form-btn">
               <div className="wrap-contact100-form-btn">
