@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 // import img_1 from "./img/nj1.gif";
 import { Link } from "react-router-dom";
 
 const NavBar = (props) => {
 
-  // const [change, changeAbout] = useState(false);
-  // function props.changeFun(i) {
-  //   // let i = 0;
-  //   if (i === 0) { changeAbout(true); }
-  //   else { changeAbout(false); }
-  // }
+  const [contcon, changeCon] = useState("Country/in");
+  function changeCountrytag(nm) {
+    changeCon(nm);
+  }
+
+  // changeCountrytag("Country/in")
 
 
 
@@ -39,9 +39,69 @@ const NavBar = (props) => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 menu-list">
+            <li className="nav-item dropdown">
+              <button className="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                {contcon}
+              </button>
+              <ul className={`dropdown-menu dropdown-menu-${props.mode === "light" ? "light" : "dark"}`} aria-labelledby="navbarDropdown">
+                <li>
+                  <div className="container">
+                    <div className="row row_drop">
+                      <div className="col-6">
+                        <Link className={`dropdown-item dropdown-item-${props.mode === "light" ? "light" : "dark"}`} onClick={() => { changeCountrytag("Country/in"); props.changeFun(1); props.changeCountry("in"); }} to="/general_1">India</Link>
+                      </div>
+                      <div className="col-6">
+                        <Link className={`dropdown-item dropdown-item-${props.mode === "light" ? "light" : "dark"}`} onClick={() => { changeCountrytag("Country/ru"); props.changeFun(1); props.changeCountry("ru"); }} to="/general_2">Russia</Link>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="container">
+                    <div className="row row_drop">
+                      <div className="col-6 ">
+                        <Link className={`dropdown-item dropdown-item-${props.mode === "light" ? "light" : "dark"}`} onClick={() => { changeCountrytag("Country/uk"); props.changeFun(1); props.changeCountry("gb"); }} to="/general_3">UK</Link>
+                      </div>
+                      <div className="col-6">
+                        <Link className={`dropdown-item dropdown-item-${props.mode === "light" ? "light" : "dark"}`} onClick={() => { changeCountrytag("Country/us"); props.changeFun(1); props.changeCountry("us"); }} to="/general_4">USA</Link>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="container">
+                    <div className="row row_drop">
+                      <div className="col-6">
+                        <Link className={`dropdown-item dropdown-item-${props.mode === "light" ? "light" : "dark"}`} onClick={() => { changeCountrytag("Country/cn"); props.changeFun(1); props.changeCountry("cn"); }} to="/general_5">China</Link>
+                      </div>
+                      <div className="col-6">
+                        <Link className={`dropdown-item dropdown-item-${props.mode === "light" ? "light" : "dark"}`} onClick={() => { changeCountrytag("Country/jp"); props.changeFun(1); props.changeCountry("jp"); }} to="/general_6">Japan</Link>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="container">
+                    <div className="row row_drop">
+                      <div className="col-6">
+                        <Link className={`dropdown-item dropdown-item-${props.mode === "light" ? "light" : "dark"}`} onClick={() => { changeCountrytag("Country/fr"); props.changeFun(1); props.changeCountry("fr"); }} to="/general_7">France</Link>
+                      </div>
+                      <div className="col-6">
+                        <Link className={`dropdown-item dropdown-item-${props.mode === "light" ? "light" : "dark"}`} onClick={() => { changeCountrytag("Country/uae"); props.changeFun(1); props.changeCountry("ae"); }} to="/general_8">UAE</Link>
+                      </div>
+                    </div>
+                  </div>
+                </li>
 
-            <li className="nav-item" ><Link className="nav-link active" aria-current="page" to="/" onClick={() => props.changeFun(1)}>Home</Link></li>
-            {/* <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/">About</Link></li> */}
+                {/* <li><button className={`dropdown-item dropdown-item-${props.mode === "light" ? "light" : "dark"}`} href="#">Something else here</button></li> */}
+                {/* <li><button className={`dropdown-item dropdown-item-${props.mode === "light" ? "light" : "dark"}`} href="#">Something else here</button></li>
+                <li><button className={`dropdown-item dropdown-item-${props.mode === "light" ? "light" : "dark"}`} href="#">Something else here</button></li>
+                <li><button className={`dropdown-item dropdown-item-${props.mode === "light" ? "light" : "dark"}`} href="#">Something else here</button></li>
+                <li><button className={`dropdown-item dropdown-item-${props.mode === "light" ? "light" : "dark"}`} href="#">Something else here</button></li>
+                <li><button className={`dropdown-item dropdown-item-${props.mode === "light" ? "light" : "dark"}`} href="#">Something else here</button></li> */}
+              </ul>
+
+            </li>
             <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/business" onClick={() => props.changeFun(1)}>Business</Link></li>
             <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/entertainment" onClick={() => props.changeFun(1)}>Entertainment</Link></li>
             <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/health" onClick={() => props.changeFun(1)}>Health</Link></li>
@@ -49,6 +109,7 @@ const NavBar = (props) => {
             <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/sports" onClick={() => props.changeFun(1)}>Sports</Link></li>
             <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/technology" onClick={() => props.changeFun(1)}>Technology</Link></li>
             <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/about" onClick={() => props.changeFun(0)}>About</Link></li>
+            <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/contact" onClick={() => props.changeFun(0)}>Contact</Link></li>
           </ul>
           {/* <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />

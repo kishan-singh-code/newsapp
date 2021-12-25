@@ -6,6 +6,7 @@
 
 .poggleWrapper {
   overflow: hidden;
+  text-align: center;
 }
 .poggleWrapper input {
   position: absolute;
@@ -16,22 +17,24 @@
   cursor: pointer;
   display: inline-block;
   position: relative;
-  width: 45px;
+  width: 45.5px;
   height: 26px;
   background-color: #8ed2f1;
   border-radius: 42px;
   transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
+/* #ffaf38; */
 
 .poggle__handler {
   display: inline-block;
   position: relative;
   z-index: 1;
   top: 2px;
-  left: 3px;
+  left: -9px !important;
   width: 22px;
   height: 22px;
   background-color: #ffaf38;
+  border: 1px solid #ff9900;
   border-radius: 35px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -139,6 +142,7 @@ input:checked + .poggle:after {
 }
 input:checked + .poggle .poggle__handler {
   background-color: #ffe6b8;
+  border: 0px;
   transform: translate3d(18px, 0, 0) rotate(0);
 }
 input:checked + .poggle .poggle__handler .crater {

@@ -9,6 +9,7 @@ import ScrollToTopRout from "./components/ScrollToTopRout";
 import ScrollToTop from "react-scroll-to-top";
 import About from "./components/About";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 
 
@@ -27,8 +28,15 @@ const App = () => {
     }
   };
 
+  const [country, setCountry] = useState("in");
 
-  const country = 'us';
+  function changeCountry(va) {
+    setCountry(va);
+    console.log(va);
+  };
+
+  // const country = 'us';
+
   const pageSize = 30;
   const apikey = process.env.REACT_APP_NEWS_API
 
@@ -81,7 +89,7 @@ const App = () => {
         <ScrollToTopRout />
 
 
-        <NavBar mode={mode} toggleMode={toggleMode} offset={offset} winsiz={winsiz} changeFun={changeFun} change={change} />
+        <NavBar mode={mode} toggleMode={toggleMode} offset={offset} winsiz={winsiz} changeFun={changeFun} change={change} changeCountry={changeCountry} />
         <LoadingBar
           color='#f11946'
           progress={progress}
@@ -94,6 +102,16 @@ const App = () => {
         {/* <News setProgress={setProgress} apikey={apikey}  country={country} category="sports" /> */}
         <Switch>
           <Route exact path="/"><News setProgress={setProgress} apikey={apikey} key="general" country={country} category="general" pageSize={pageSize} mode={mode} winsiz={winsiz} /></Route>
+
+          <Route exact path="/general_1"><News setProgress={setProgress} apikey={apikey} key="general_1" country={country} category="general" pageSize={pageSize} mode={mode} winsiz={winsiz} /></Route>
+          <Route exact path="/general_2"><News setProgress={setProgress} apikey={apikey} key="general_2" country={country} category="general" pageSize={pageSize} mode={mode} winsiz={winsiz} /></Route>
+          <Route exact path="/general_3"><News setProgress={setProgress} apikey={apikey} key="general_3" country={country} category="general" pageSize={pageSize} mode={mode} winsiz={winsiz} /></Route>
+          <Route exact path="/general_4"><News setProgress={setProgress} apikey={apikey} key="general_4" country={country} category="general" pageSize={pageSize} mode={mode} winsiz={winsiz} /></Route>
+          <Route exact path="/general_5"><News setProgress={setProgress} apikey={apikey} key="general_5" country={country} category="general" pageSize={pageSize} mode={mode} winsiz={winsiz} /></Route>
+          <Route exact path="/general_6"><News setProgress={setProgress} apikey={apikey} key="general_6" country={country} category="general" pageSize={pageSize} mode={mode} winsiz={winsiz} /></Route>
+          <Route exact path="/general_7"><News setProgress={setProgress} apikey={apikey} key="general_7" country={country} category="general" pageSize={pageSize} mode={mode} winsiz={winsiz} /></Route>
+          <Route exact path="/general_8"><News setProgress={setProgress} apikey={apikey} key="general_8" country={country} category="general" pageSize={pageSize} mode={mode} winsiz={winsiz} /></Route>
+
           <Route exact path="/business"><News setProgress={setProgress} apikey={apikey} key="business" country={country} category="business" pageSize={pageSize} mode={mode} winsiz={winsiz} /></Route>
           <Route exact path="/entertainment"><News setProgress={setProgress} apikey={apikey} key="entertainment" country={country} category="entertainment" pageSize={pageSize} mode={mode} winsiz={winsiz} /></Route>
           <Route exact path="/health"><News setProgress={setProgress} apikey={apikey} key="health" country={country} category="health" pageSize={pageSize} mode={mode} winsiz={winsiz} /></Route>
@@ -101,6 +119,7 @@ const App = () => {
           <Route exact path="/sports"><News setProgress={setProgress} apikey={apikey} key="sports" country={country} category="sports" pageSize={pageSize} mode={mode} winsiz={winsiz} /></Route>
           <Route exact path="/technology"><News setProgress={setProgress} apikey={apikey} key="technology" country={country} category="technology" pageSize={pageSize} mode={mode} winsiz={winsiz} /></Route>
           <Route exact path="/about"><About mode={mode} /></Route>
+          <Route exact path="/contact"><Contact mode={mode} /></Route>
         </Switch>
         <Footer changeFun={changeFun} mode={mode} />
       </Router>
