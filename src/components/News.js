@@ -3,6 +3,7 @@ import NewsItem from "./NewsItem";
 import PropTypes from "prop-types";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Place from "./Place";
+import Carousel from "./Carousel";
 
 
 const News = (props) => {
@@ -16,8 +17,8 @@ const News = (props) => {
 
     const updateNews = async () => {
         props.setProgress(10)
-        let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apikey}&page=${page}&pageSize=${props.pageSize}`;
-        // let url = `http://localhost:3000/in&page=${page}`;
+        // let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apikey}&page=${page}&pageSize=${props.pageSize}`;
+        let url = `http://localhost:3000/in&page=${page}`;
         setLoading(true)
         let data = await fetch(url);
         props.setProgress(40)
@@ -45,8 +46,8 @@ const News = (props) => {
 
     const fetchMoreData = async () => {
 
-        let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apikey}&page=${page + 1}&pageSize=${props.pageSize}`;
-        // let url = `http://localhost:3000/in&page=${page + 1}`;
+        // let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apikey}&page=${page + 1}&pageSize=${props.pageSize}`;
+        let url = `http://localhost:3000/in&page=${page + 1}`;
         setPage(page + 1)
         let data = await fetch(url);
         let parsedData = await data.json();
@@ -58,7 +59,9 @@ const News = (props) => {
     };
 
 
-    return (
+    return (<>
+        <Carousel winsiz={props.winsiz} />
+
         <div className="container mb-5 pb-5 cont_size">
             <h2 className="my-3 " style={{
                 color: props.mode === "dark" ? "white" : "black",
@@ -74,6 +77,7 @@ const News = (props) => {
                 next={fetchMoreData}
                 hasMore={articles.length !== totalResults}
                 loader={<Place i={3} spin={false} />}
+
             >
                 <div className="container">
                     <div className="row row-cols-1 row-cols-md-3 g-4 mar_top">
@@ -102,6 +106,7 @@ const News = (props) => {
                 </div>
             </InfiniteScroll>
         </div>
+    </>
     );
 }
 

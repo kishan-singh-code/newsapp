@@ -4,21 +4,25 @@ import { Link } from "react-router-dom";
 
 const NavBar = (props) => {
 
+  // const [change, changeAbout] = useState(false);
+  // function props.changeFun(i) {
+  //   // let i = 0;
+  //   if (i === 0) { changeAbout(true); }
+  //   else { changeAbout(false); }
+  // }
+
 
 
 
   return (
     // {`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
-    <nav className={`navbar navbar-expand-lg fixed-top love ${props.winsiz > 991 ? (props.offset > 100 ? (props.mode === "light" ? "navbar-light stick_nav" : "navbar-dark stick_nav") : "navbar-dark") : "navbar-dark"}`}
+    <nav className={`navbar navbar-expand-lg fixed-top love ${props.change ? ("bg-dark navbar-dark") : (props.winsiz > 991 ? (props.offset > 100 ? (props.mode === "light" ? "navbar-light stick_nav" : "navbar-dark stick_nav") : "navbar-dark") : "navbar-dark")}`}
       style={{
         background: props.mode === "dark" ? (props.offset > 100 ? "#000000" : "") : "",
         boxShadow: props.offset > 100 ? (props.mode === "dark" ? "0px 3px 15px 0px rgba(255, 255, 255, 0.3)" : "0px 3px 15px 0px rgba(0, 0, 0, 0.3)") : ""
       }}
-
-    // box-shadow: 0px 3px 15px 0px rgba(255, 255, 255, 0.3);
     >
-      {/* className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`} */}
-      {/* className={`form-check form-switch text-${props.mode === "light" ? "dark" : "light"}`} */}
+
 
 
 
@@ -36,15 +40,15 @@ const NavBar = (props) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 menu-list">
 
-            <li className="nav-item" ><Link className="nav-link active" aria-current="page" to="/">Home</Link></li>
+            <li className="nav-item" ><Link className="nav-link active" aria-current="page" to="/" onClick={() => props.changeFun(1)}>Home</Link></li>
             {/* <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/">About</Link></li> */}
-            <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/business">Business</Link></li>
-            <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/entertainment">Entertainment</Link></li>
-            <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/general">General</Link></li>
-            <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/health">Health</Link></li>
-            <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/science">Science</Link></li>
-            <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/sports">Sports</Link></li>
-            <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/technology">Technology</Link></li>
+            <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/business" onClick={() => props.changeFun(1)}>Business</Link></li>
+            <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/entertainment" onClick={() => props.changeFun(1)}>Entertainment</Link></li>
+            <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/health" onClick={() => props.changeFun(1)}>Health</Link></li>
+            <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/science" onClick={() => props.changeFun(1)}>Science</Link></li>
+            <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/sports" onClick={() => props.changeFun(1)}>Sports</Link></li>
+            <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/technology" onClick={() => props.changeFun(1)}>Technology</Link></li>
+            <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/about" onClick={() => props.changeFun(0)}>About</Link></li>
           </ul>
           {/* <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />

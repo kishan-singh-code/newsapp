@@ -45,7 +45,7 @@ h6 {
 }
 .card_hover_black:hover {
   transform: scale(0.9999, 0.9999);
-  box-shadow: 0 2px 20px rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 15px rgba(255, 255, 255, 0.3);
 }
 /* ------------------------------------------------------------------------- */
 /* button part */
@@ -176,9 +176,13 @@ iframe {
 
 .user img {
   /* border-radius: 50%; */
-  border-radius: 50%;
+  object-fit: cover !important;
+  height: 40px !important;
   width: 40px;
-  height: 40px;
+
+  border-radius: 50%;
+  /* width: 40px;
+  height: 40px; */
   margin-right: 10px;
   border: 2px solid #0dcaf0 !important;
 }
@@ -277,7 +281,7 @@ iframe {
   /* width: 100%; */
   /* z-index: 2; */
   /* padding: 25px 0; */
-  transition: all 0.4s ease;
+  transition: all 0.2s ease;
 }
 
 .stick_nav {
@@ -307,4 +311,14 @@ iframe {
 
 .pill_light {
   background-color: #ff828e !important;
+}
+
+/* -------------- */
+
+.about_card {
+  border-radius: 0px;
+}
+
+.about_mt {
+  margin-top: 6rem;
 }

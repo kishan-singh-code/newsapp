@@ -1,7 +1,7 @@
 import React from "react";
 import img_1 from "./img/5.jpg";
-// import img_2 from "./img/2.jpg";
-// import img_3 from "./img/3.jpg";
+import img_2 from "./img/2.jpg";
+import img_3 from "./img/3.jpg";
 const Carousel = (props) => {
 
   return (
@@ -35,7 +35,7 @@ const Carousel = (props) => {
         ></button>
       </div>
       <div className="carousel-inner">
-        <div className="carousel-item active" >
+        <div className="carousel-item active" data-bs-interval="1800">
           <img
             // id="imageidi"
             src={img_1}
@@ -52,8 +52,12 @@ const Carousel = (props) => {
             </p>
           </div>
         </div>
-        {/* <div className="carousel-item" data-bs-interval="2800">
-          <img id="imageidi" src={img_2} className="d-block w-100" alt="..." />
+        <div className="carousel-item" data-bs-interval="2800">
+          <img src={img_2} className="d-block w-100"
+            alt="..." style={{
+              objectFit: 'cover',
+              height: (props.winsiz > 990 ? Math.ceil(props.winsiz / 2.5) : (props.winsiz > 500 ? Math.ceil(props.winsiz / 2) : Math.ceil(props.winsiz / 1.7))).toString() + 'px',
+            }} />
           <div className="carousel-caption d-none d-md-block">
             <h5>Second slide label</h5>
             <p>
@@ -62,14 +66,18 @@ const Carousel = (props) => {
           </div>
         </div>
         <div className="carousel-item" data-bs-interval="3900">
-          <img id="imageidi" src={img_3} className="d-block w-100" alt="..." />
+          <img src={img_3} className="d-block w-100"
+            alt="..." style={{
+              objectFit: 'cover',
+              height: (props.winsiz > 990 ? Math.ceil(props.winsiz / 2.5) : (props.winsiz > 500 ? Math.ceil(props.winsiz / 2) : Math.ceil(props.winsiz / 1.7))).toString() + 'px',
+            }} />
           <div className="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
             <p>
               Some representative placeholder content for the third slide.
             </p>
           </div>
-        </div> */}
+        </div>
       </div>
       <button
         className="carousel-control-prev"
