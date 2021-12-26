@@ -21,7 +21,7 @@ const App = () => {
   const toggleMode = () => {
     if (mode === "light") {
       setMode("dark");
-      document.body.style.backgroundColor = "#122f47";
+      document.body.style.backgroundColor = "#06111a";
     } else {
       setMode("light");
       document.body.style.backgroundColor = "#fff5c0";
@@ -77,7 +77,7 @@ const App = () => {
         {/* <ScrollToTop_Rout /> */}
         <ScrollToTop smooth style={{
           border: "2px solid #0dcaf0",
-          borderRadius: "50%", boxShadow: `${mode === "light" ? "0 2px 20px rgb(0 0 0 / 70%)" : "0 2px 15px rgb(242 243 245 / 30%)"}`,
+          borderRadius: "50%", boxShadow: `${mode === "light" ? "0 2px 20px rgb(0 0 0 / 70%)" : "0 2px 10px rgb(242 243 245 / 20%)"}`,
           backgroundColor: `${mode === "light" ? "#ffffff" : "#212529"}`,
 
         }}

@@ -19,24 +19,34 @@ const NavBar = (props) => {
     <nav className={`navbar navbar-expand-lg fixed-top love ${props.change ? ("bg-dark navbar-dark") : (props.winsiz > 991 ? (props.offset > 100 ? (props.mode === "light" ? "navbar-light stick_nav" : "navbar-dark stick_nav") : "navbar-dark") : "navbar-dark")}`}
       style={{
         background: props.mode === "dark" ? (props.offset > 100 ? "#000000" : "") : "",
-        boxShadow: props.offset > 100 ? (props.mode === "dark" ? "0px 3px 15px 0px rgba(255, 255, 255, 0.3)" : "0px 3px 15px 0px rgba(0, 0, 0, 0.3)") : ""
+        boxShadow: props.offset > 100 ? (props.mode === "dark" ? "0px 1px 10px 0px rgba(255, 255, 255, 0.2)" : "0px 3px 15px 0px rgba(0, 0, 0, 0.3)") : ""
       }}
     >
 
 
 
 
+
+
       <div className="container-fluid">
-        <Link className="navbar-brand ms-4 fw-bold" to="/">
+        {/* <div className="container-fluid">
+          <div className="row">
+            <div className="col-10 text-center"> */}
+        <Link className={`navbar-brand ${props.winsiz > 991 ? "ms-4" : ""} fw-bold`} to="/" style={{ marginLeft: (props.winsiz - 161) / 2 }}>
 
           {/* <img src={img_1} width={`${props.offset > 100 ? "35" : "60"}`} height={`${props.offset > 100 ? "35" : "60"}`} className="mx-2" alt="..." style={{ transition: "all 0.3s ease" }} /> */}
           News Express
         </Link>
+        {/* </div> */}
+        {/* <div className="col-2 text-end"> */}
         <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="toggler-icon top-bar"></span>
           <span className="toggler-icon middle-bar"></span>
           <span className="toggler-icon bottom-bar"></span>
         </button>
+        {/* </div>
+          </div>
+        </div> */}
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 menu-list">
             <li className="nav-item dropdown">
@@ -130,6 +140,8 @@ const NavBar = (props) => {
               <span className="star star--4"></span>
               <span className="star star--5"></span>
               <span className="star star--6"></span>
+              <span className="star star--7"></span>
+              <span className="star star--8"></span>
             </label>
           </div>
 

@@ -16,7 +16,6 @@ h6 {
 
 ::-webkit-scrollbar-track {
   border-radius: 20px;
-  /* background-color: rgba(255, 255, 255, 0.1); */
 }
 
 ::-webkit-scrollbar {
@@ -45,7 +44,7 @@ h6 {
 }
 .card_hover_black:hover {
   transform: scale(0.9999, 0.9999);
-  box-shadow: 0 2px 15px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 15px rgba(255, 255, 255, 0.2);
 }
 /* ------------------------------------------------------------------------- */
 /* button part */

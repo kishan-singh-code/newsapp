@@ -18,19 +18,21 @@ const News = (props) => {
     const updateNews = async () => {
         props.setProgress(10)
         // let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apikey}&page=${page}&pageSize=${props.pageSize}`;
-        let url = `http://localhost:3000/in&page=${page}`;
+        // let url = `http://localhost:3000/in&page=${page}`;
+        let url = `https://kishan-singh-code.github.io/jasonapi/page-${page - 1 + 1}/${props.country}.json`;
         setLoading(true)
+        // console.log(props.category);
         let data = await fetch(url);
         props.setProgress(40)
-
         let parsedData = await data.json();
+        parsedData = parsedData[props.category];
+        // console.log(parsedData);
         props.setProgress(70)
-
-        setTimeout(() => {
-            setArticles(parsedData.articles)
-            setTotalResults(parsedData.totalResults)
-            setLoading(false)
-        }, 5000);
+        // setTimeout(() => {
+        setArticles(parsedData.articles)
+        setTotalResults(parsedData.totalResults)
+        setLoading(false)
+        // }, 500);
 
         props.setProgress(100)
     }
@@ -45,17 +47,18 @@ const News = (props) => {
 
 
     const fetchMoreData = async () => {
-
         // let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apikey}&page=${page + 1}&pageSize=${props.pageSize}`;
-        let url = `http://localhost:3000/in&page=${page + 1}`;
-        setPage(page + 1)
+        // let url = `http://localhost:3000/in&page=${page + 1}`;
+        let url = `https://kishan-singh-code.github.io/jasonapi/page-${page + 1}/${props.country}.json`;
+        setPage(page + 1);
         let data = await fetch(url);
         let parsedData = await data.json();
-        setTimeout(() => {
-            setArticles(articles.concat(parsedData.articles))
-            setTotalResults(parsedData.totalResults)
+        parsedData = parsedData[props.category];
+        // setTimeout(() => {
+        setArticles(articles.concat(parsedData.articles))
+        setTotalResults(parsedData.totalResults)
 
-        }, 5000);
+        // }, 500);
     };
 
 

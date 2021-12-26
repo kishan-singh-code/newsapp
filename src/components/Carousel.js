@@ -35,10 +35,11 @@ const Carousel = (props) => {
         ></button>
       </div>
       <div className="carousel-inner">
-        <div className="carousel-item active" data-bs-interval="1800">
+        <div className="carousel-item active" data-bs-interval="2000">
           <img
             // id="imageidi"
-            src={img_1}
+            // src={img_1}
+            src="https://images.hindustantimes.com/img/2021/12/25/1600x900/Breaking-News-Live-Blog-pic_1626307942790_1640475421063.jpg"
             className="d-block w-100"
             alt="..." style={{
               objectFit: 'cover',
@@ -52,8 +53,8 @@ const Carousel = (props) => {
             </p>
           </div>
         </div>
-        <div className="carousel-item" data-bs-interval="2800">
-          <img src={img_2} className="d-block w-100"
+        <div className="carousel-item" data-bs-interval="2000">
+          <img src="https://i.ytimg.com/vi/uRTYqKtFINQ/maxresdefault.jpg" className="d-block w-100"
             alt="..." style={{
               objectFit: 'cover',
               height: (props.winsiz > 990 ? Math.ceil(props.winsiz / 2.5) : (props.winsiz > 500 ? Math.ceil(props.winsiz / 2) : Math.ceil(props.winsiz / 1.7))).toString() + 'px',
@@ -65,8 +66,8 @@ const Carousel = (props) => {
             </p>
           </div>
         </div>
-        <div className="carousel-item" data-bs-interval="3900">
-          <img src={img_3} className="d-block w-100"
+        <div className="carousel-item" data-bs-interval="2000">
+          <img src="https://cdn.mos.cms.futurecdn.net/fZv55WrxtC3kxbH3KBxYmf-1200-80.png" className="d-block w-100 kalu"
             alt="..." style={{
               objectFit: 'cover',
               height: (props.winsiz > 990 ? Math.ceil(props.winsiz / 2.5) : (props.winsiz > 500 ? Math.ceil(props.winsiz / 2) : Math.ceil(props.winsiz / 1.7))).toString() + 'px',

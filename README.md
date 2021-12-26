@@ -124,3 +124,41 @@ ua Ukraine
 <!-- us United States -->
 ve Venezuela
 za South Africa
+
+{
+    "general": {
+      "status": "ok",
+      "totalResults": 76,
+      "articles": []
+    },
+    "business": {
+      "status": "ok",
+      "totalResults": 76,
+      "articles": []
+    },
+    "entertainment": {
+      "status": "ok",
+      "totalResults": 76,
+      "articles": []
+    },
+    "health": {
+      "status": "ok",
+      "totalResults": 76,
+      "articles": []
+    },
+    "science": {
+      "status": "ok",
+      "totalResults": 76,
+      "articles": []
+    },
+    "sports": {
+      "status": "ok",
+      "totalResults": 76,
+      "articles": []
+    },
+    "technology": {
+      "status": "ok",
+      "totalResults": 76,
+      "articles": []
+    }
+}
