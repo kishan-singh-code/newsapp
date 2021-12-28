@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-// import img_1 from "./img/nj1.gif";
+import img_1 from "./img/icons8-news.svg";
+import img_2 from "./img/icons8-newsb.svg";
 import { Link } from "react-router-dom";
 
 const NavBar = (props) => {
@@ -32,9 +33,10 @@ const NavBar = (props) => {
         {/* <div className="container-fluid">
           <div className="row">
             <div className="col-10 text-center"> */}
-        <Link className={`navbar-brand ${props.winsiz > 991 ? "ms-4" : ""} fw-bold`} to="/" style={{ marginLeft: (props.winsiz - 161) / 2 }}>
+        <Link className={`navbar-brand ${props.winsiz > 991 ? "ms-1" : ""} fw-bold`} to="/" style={{ marginLeft: (props.winsiz - 225) / 2 }}>
 
-          {/* <img src={img_1} width={`${props.offset > 100 ? "35" : "60"}`} height={`${props.offset > 100 ? "35" : "60"}`} className="mx-2" alt="..." style={{ transition: "all 0.3s ease" }} /> */}
+          {props.winsiz > 991 && <img src={props.offset > 100 ? (props.mode === "dark" ? img_1 : img_2) : img_1} width={`${props.offset > 100 ? "35" : "40"}`} height={`${props.offset > 100 ? "35" : "40"}`} className="mx-2" alt="..." style={{ transition: "all 0.3s ease", fill: "white" }} />}
+          {props.winsiz <= 991 && <img src={img_1} width="27" height="27" className="mx-2" alt="..." />}
           News Express
         </Link>
         {/* </div> */}
@@ -50,7 +52,7 @@ const NavBar = (props) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 menu-list">
             <li className="nav-item dropdown">
-              <button className="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <button className="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false" style={{ fontWeight: "450" }}>
                 {contcon}
               </button>
               <ul className={`dropdown-menu dropdown-menu-${props.mode === "light" ? "light" : "dark"}`} aria-labelledby="navbarDropdown">

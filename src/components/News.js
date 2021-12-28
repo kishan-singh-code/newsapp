@@ -4,6 +4,9 @@ import PropTypes from "prop-types";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Place from "./Place";
 import Carousel from "./Carousel";
+import img_1 from "./img/1.gif";
+import img_4 from "./img/1.webp";
+
 
 
 const News = (props) => {
@@ -12,6 +15,14 @@ const News = (props) => {
     const [loading, setLoading] = useState(true)
     const [page, setPage] = useState(1)
     const [totalResults, setTotalResults] = useState(0)
+    const [arr1, setarr1] = useState([])
+    const [arr4, setarr4] = useState([])
+    const [arr2, setarr2] = useState([img_1])
+    const [arr3, setarr3] = useState([])
+    // const [r, setr] = useState([])
+    // const [r2, setr2] = useState(70)
+    // const [r3, setr3] = useState(70)
+
 
 
 
@@ -35,6 +46,55 @@ const News = (props) => {
         // }, 500);
 
         props.setProgress(100)
+        let arrt1 = [];
+        let arrt2 = [];
+        let arrt3 = [];
+        let arrt4 = [];
+        let rsiz = [];
+        for (let i = 0; i < 3; i++) {
+            arrt1[i] = parsedData.articles[i].title;
+            arrt4[i] = parsedData.articles[i].title;
+        }
+        setarr1(arrt1);
+        // ----shotner-----
+        let j = 69;
+        for (let i = 0; i < 3; i++) {
+
+            if (arrt1[i].length > 70) {
+                for (j = 69; j > 10; j--) {
+                    if (arrt1[i][j] === ' ') {
+                        break;
+                    }
+                }
+            }
+            else {
+                j = arrt1[i].length;
+            }
+            rsiz[i] = j;
+        }
+        // setr(rsiz);
+
+        for (let i = 0; i < 3; i++) {
+            arrt4[i] = arrt4[i].slice(0, rsiz[i]);
+        }
+
+        setarr4(arrt4);
+
+        // console.log(arrt);
+        for (let i = 0; i < 3; i++) {
+            arrt2[i] = parsedData.articles[i].urlToImage;
+        }
+        setarr2(arrt2);
+        // console.log(arrt);
+        for (let i = 0; i < 3; i++) {
+            arrt3[i] = parsedData.articles[i].url;
+        }
+        setarr3(arrt3);
+        // console.log(arrt);
+
+
+        // let i = 0;
+        // console.log(arrt);
     }
 
     useEffect(() => {
@@ -62,12 +122,15 @@ const News = (props) => {
     };
 
 
+
     return (<>
-        <Carousel winsiz={props.winsiz} />
+
+        <Carousel winsiz={props.winsiz} arr1={arr1} arr2={arr2} arr3={arr3} arr4={arr4} />
 
         <div className="container mb-5 pb-5 cont_size">
-            <h2 className="my-3 " style={{
+            <h2 className={`mt-3 ${props.winsiz > 991 ? "" : "text-center"}`} style={{
                 color: props.mode === "dark" ? "white" : "black",
+                marginBottom: props.winsiz > 991 ? "" : "-0.1rem"
             }}>
                 Top News from{" "}
                 {props.category.charAt(0).toUpperCase() +
@@ -84,9 +147,10 @@ const News = (props) => {
             >
                 <div className="container">
                     <div className="row row-cols-1 row-cols-md-3 g-4 mar_top">
-                        {articles.map((element) => {
+                        {articles.map((element, index) => {
                             return (
-                                <NewsItem
+
+                                index > 2 && <NewsItem
                                     mode={props.mode}
                                     key={element.url}
                                     title={element.title ? element.title : ""}
@@ -94,7 +158,7 @@ const News = (props) => {
                                     imageUrl={
                                         element.urlToImage
                                             ? element.urlToImage
-                                            : "https://akm-img-a-in.tosshub.com/indiatoday/Video_Extra_Large_Image/headlines_video_647_061016095604.jpg?l7jmx5Mxmn.85p9P1FUbCBn1z_BErMNw&size=1200:675"
+                                            : img_4
                                     }
                                     newsUrl={element.url}
                                     author={
@@ -103,6 +167,7 @@ const News = (props) => {
                                     name={element.source.name}
                                     time={element.publishedAt}
                                 />
+
                             );
                         })}
                     </div>

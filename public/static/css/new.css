@@ -219,13 +219,28 @@ iframe {
 }
 
 /* --------------------------------------- */
+.chotu {
+  font-size: 2rem;
+  font-weight: 300;
+}
 
-@media (max-width: 500px) {
+.chiku {
+  border-radius: 50%;
+  width: 7px !important;
+  height: 7px !important;
+  /* background-color: #404040; */
+}
+
+@media (max-width: 990px) {
   .chiku {
     border-radius: 50%;
     width: 5px !important;
     height: 5px !important;
     /* background-color: #404040; */
+  }
+  .chotu {
+    font-size: 0.9rem;
+    font-weight: 400;
   }
 
   .lol {
@@ -233,7 +248,7 @@ iframe {
   }
 
   .mtop {
-    margin-top: 4.7rem !important;
+    margin-top: 2.8rem !important;
   }
 
   .carousel-control-prev-icon,
@@ -242,9 +257,9 @@ iframe {
     height: 1rem !important;
   }
 }
-.mtop {
+/* .mtop {
   margin-top: 4.75rem !important;
-}
+} */
 
 .mar_top {
   margin-top: auto;
@@ -300,7 +315,7 @@ iframe {
 @media (max-width: 991px) {
   .love {
     background: #1b1b1b;
-    opacity: 0.9 !important;
+    /* opacity: 0.9 !important; */
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }

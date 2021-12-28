@@ -1,13 +1,15 @@
 import React from "react";
-import img_1 from "./img/5.jpg";
-import img_2 from "./img/2.jpg";
-import img_3 from "./img/3.jpg";
+// import img_1 from "./img/5.jpg";
+// import img_2 from "./img/2.jpg";
+// import img_3 from "./img/3.jpg";
+import img_4 from "./img/1.webp";
 const Carousel = (props) => {
+
 
   return (
     <div
       id="carouselExampleCaptions"
-      className="carousel slide carousel-fade"
+      className="carousel slide carousel-fade mtop"
       data-bs-ride="carousel"
     >
       <div className="carousel-indicators ola lol">
@@ -36,47 +38,57 @@ const Carousel = (props) => {
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active" data-bs-interval="2000">
-          <img
-            // id="imageidi"
-            // src={img_1}
-            src="https://images.hindustantimes.com/img/2021/12/25/1600x900/Breaking-News-Live-Blog-pic_1626307942790_1640475421063.jpg"
-            className="d-block w-100"
-            alt="..." style={{
-              objectFit: 'cover',
-              height: (props.winsiz > 990 ? Math.ceil(props.winsiz / 2.5) : (props.winsiz > 500 ? Math.ceil(props.winsiz / 2) : Math.ceil(props.winsiz / 1.7))).toString() + 'px',
-            }}
-          />
-          <div className="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>
-              Some representative placeholder content for the first slide.
-            </p>
+          <div className={`${props.winsiz > 990 ? "vignette" : "vignette"}`}>
+            <img
+              src={props.arr2[0] ? props.arr2[0] : img_4}
+              className="d-block w-100"
+              alt="..." style={{
+                objectFit: 'cover',
+                height: (props.winsiz > 990 ? Math.ceil(props.winsiz / 2.3) : (props.winsiz > 500 ? Math.ceil(props.winsiz / 2) : Math.ceil(props.winsiz / 1.6))).toString() + 'px',
+              }}
+            />
+          </div>
+          <div className="carousel-caption" style={{ paddingBottom: props.winsiz > 990 ? "" : "0rem" }}>
+            <h5 className="chotu" style={{ textShadow: "2px 2px 4px #000000", marginBottom: props.winsiz > 990 ? "2rem" : "0.5rem" }}>{props.arr4[0] + "..."}</h5>
+            <form action={props.arr3[0]} target="_blank">
+              <button type="submit" className={`btn btn-outline-light ${props.winsiz > 990 ? "px-4" : "btn-sm px-2"} rounded-pill`} style={{ marginBottom: props.winsiz > 990 ? "1.5rem" : "0.2rem", padding: props.winsiz > 990 ? "" : ".1rem .4rem", fontSize: props.winsiz > 990 ? "1.1rem" : "0.75rem", border: props.winsiz > 990 ? "2px solid white" : " 2px solid white" }}>Read More</button>
+            </form>
           </div>
         </div>
         <div className="carousel-item" data-bs-interval="2000">
-          <img src="https://i.ytimg.com/vi/uRTYqKtFINQ/maxresdefault.jpg" className="d-block w-100"
-            alt="..." style={{
-              objectFit: 'cover',
-              height: (props.winsiz > 990 ? Math.ceil(props.winsiz / 2.5) : (props.winsiz > 500 ? Math.ceil(props.winsiz / 2) : Math.ceil(props.winsiz / 1.7))).toString() + 'px',
-            }} />
-          <div className="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>
-              Some representative placeholder content for the second slide.
-            </p>
+          <div className={`${props.winsiz > 990 ? "vignette" : "vignette"}`}>
+            <img
+              src={props.arr2[1] ? props.arr2[1] : img_4}
+              className="d-block w-100"
+              alt="..." style={{
+                objectFit: 'cover',
+                height: (props.winsiz > 990 ? Math.ceil(props.winsiz / 2.3) : (props.winsiz > 500 ? Math.ceil(props.winsiz / 2) : Math.ceil(props.winsiz / 1.6))).toString() + 'px',
+              }}
+            />
+          </div>
+          <div className="carousel-caption" style={{ paddingBottom: props.winsiz > 990 ? "" : "0rem" }}>
+            <h5 className="chotu" style={{ textShadow: "2px 2px 4px #000000", marginBottom: props.winsiz > 990 ? "2rem" : "0.5rem" }}>{props.arr4[1] + "..."}</h5>
+            <form action={props.arr3[1]} target="_blank">
+              <button type="submit" className={`btn btn-outline-light ${props.winsiz > 990 ? "px-4" : "btn-sm px-2"} rounded-pill`} style={{ marginBottom: props.winsiz > 990 ? "1.5rem" : "0.2rem", padding: props.winsiz > 990 ? "" : ".1rem .4rem", fontSize: props.winsiz > 990 ? "1.1rem" : "0.75rem", border: props.winsiz > 990 ? "2px solid white" : " 2px solid white" }}>Read More</button>
+            </form>
           </div>
         </div>
         <div className="carousel-item" data-bs-interval="2000">
-          <img src="https://cdn.mos.cms.futurecdn.net/fZv55WrxtC3kxbH3KBxYmf-1200-80.png" className="d-block w-100 kalu"
-            alt="..." style={{
-              objectFit: 'cover',
-              height: (props.winsiz > 990 ? Math.ceil(props.winsiz / 2.5) : (props.winsiz > 500 ? Math.ceil(props.winsiz / 2) : Math.ceil(props.winsiz / 1.7))).toString() + 'px',
-            }} />
-          <div className="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>
-              Some representative placeholder content for the third slide.
-            </p>
+          <div className={`${props.winsiz > 990 ? "vignette" : "vignette"}`}>
+            <img
+              src={props.arr2[2] ? props.arr2[2] : img_4}
+              className="d-block w-100"
+              alt="..." style={{
+                objectFit: 'cover',
+                height: (props.winsiz > 990 ? Math.ceil(props.winsiz / 2.3) : (props.winsiz > 500 ? Math.ceil(props.winsiz / 2) : Math.ceil(props.winsiz / 1.6))).toString() + 'px',
+              }}
+            />
+          </div>
+          <div className="carousel-caption" style={{ paddingBottom: props.winsiz > 990 ? "" : "0rem" }}>
+            <h5 className="chotu" style={{ textShadow: "2px 2px 4px #000000", marginBottom: props.winsiz > 990 ? "2rem" : "0.5rem" }}>{props.arr4[2] + "..."}</h5>
+            <form action={props.arr3[2]} target="_blank">
+              <button type="submit" className={`btn btn-outline-light ${props.winsiz > 990 ? "px-4" : "btn-sm px-2"} rounded-pill`} style={{ marginBottom: props.winsiz > 990 ? "1.5rem" : "0.2rem", padding: props.winsiz > 990 ? "" : ".1rem .4rem", fontSize: props.winsiz > 990 ? "1.1rem" : "0.75rem", border: props.winsiz > 990 ? "2px solid white" : " 2px solid white" }}>Read More</button>
+            </form>
           </div>
         </div>
       </div>

@@ -27,7 +27,7 @@ const NewsItem = (props) => {
             <div className="user-info">
               <h6>{author}</h6>
               <small className={`text-${props.mode === "light" ? "dark" : "light"
-                }`} style={{ fontSize: "0.75rem" }}>{(new Date(time).toGMTString()).slice(0, -7)}</small>
+                }`} style={{ fontSize: "0.75rem" }}>{(new Date(time).toGMTString()).slice(0, -13)}</small>
             </div>
             <div id="flex_beta" className="container-contact100-form-btn">
               <div className="wrap-contact100-form-btn">
