@@ -49,13 +49,13 @@ const Carousel = (props) => {
             />
           </div>
           <div className="carousel-caption" style={{ paddingBottom: props.winsiz > 990 ? "" : "0rem" }}>
-            <h5 className="chotu" style={{ textShadow: "2px 2px 4px #000000", marginBottom: props.winsiz > 990 ? "2rem" : "0.5rem" }}>{props.arr4[0] + "..."}</h5>
+            <h5 className="chotu" style={{ textShadow: "2px 2px 4px #000000", marginBottom: props.winsiz > 990 ? "2rem" : "0.5rem" }}>{props.winsiz > 990 ? (props.arr1[0] + "...") : (props.arr4[0] + "...")}</h5>
             <form action={props.arr3[0]} target="_blank">
-              <button type="submit" className={`btn btn-outline-light ${props.winsiz > 990 ? "px-4" : "btn-sm px-2"} rounded-pill`} style={{ marginBottom: props.winsiz > 990 ? "1.5rem" : "0.2rem", padding: props.winsiz > 990 ? "" : ".1rem .4rem", fontSize: props.winsiz > 990 ? "1.1rem" : "0.75rem", border: props.winsiz > 990 ? "2px solid white" : " 2px solid white" }}>Read More</button>
+              <button type="submit" className={`btn btn-outline-light ${props.winsiz > 990 ? "px-4" : "btn-sm px-2"} rounded-pill`} style={{ marginBottom: props.winsiz > 990 ? "1.5rem" : "0.2rem", padding: props.winsiz > 990 ? "" : ".1rem .4rem", fontSize: props.winsiz > 990 ? "1.1rem" : "0.75rem", border: props.winsiz > 990 ? "2px solid white" : " 2px solid white" }} data-mdb-ripple-color="dark">Read More</button>
             </form>
           </div>
         </div>
-        <div className="carousel-item" data-bs-interval="2000">
+        <div className="carousel-item" data-bs-interval="4000">
           <div className={`${props.winsiz > 990 ? "vignette" : "vignette"}`}>
             <img
               src={props.arr2[1] ? props.arr2[1] : img_4}

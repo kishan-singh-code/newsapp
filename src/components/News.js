@@ -154,7 +154,7 @@ const News = (props) => {
                                     mode={props.mode}
                                     key={element.url}
                                     title={element.title ? element.title : ""}
-                                    description={element.description ? element.description : ""}
+                                    description={element.description ? (element.description.length < 85 ? (element.description + element.content + "...").slice(0, 130) : element.description.slice(0, 130)) : (element.description + element.content + "...").slice(0, 130)}
                                     imageUrl={
                                         element.urlToImage
                                             ? element.urlToImage
@@ -162,10 +162,11 @@ const News = (props) => {
                                     }
                                     newsUrl={element.url}
                                     author={
-                                        element.author ? element.author.slice(0, 6) : "Unknown"
+                                        element.author ? element.author.slice(0, 25) : "Unknown"
                                     }
-                                    name={element.source.name}
-                                    time={element.publishedAt}
+                                    name={element.source.name ? element.source.name : "Unknown"}
+                                    time={element.publishedAt ? element.publishedAt : "Sun, 26 Dec 2021"}
+                                    winsiz={props.winsiz}
                                 />
 
                             );

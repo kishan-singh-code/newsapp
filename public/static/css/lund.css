@@ -1,0 +1,15 @@
+.but_img {
+  /* border-radius: 50%; */
+  object-fit: cover !important;
+  height: 40px !important;
+  width: 40px;
+
+  border-radius: 50%;
+  /* width: 40px;
+    height: 40px; */
+  /* margin-right: 10px; */
+  border: 2px solid #0dcaf0 !important;
+}
+.but_h6 {
+  font-size: 0.9rem;
+}

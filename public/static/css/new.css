@@ -7,7 +7,7 @@ body {
   text-justify: inter-word;
   font-size: medium;
 }
-h6 {
+.card-title {
   /* text-align: justify; */
   text-justify: inter-word;
   font-size: large;
@@ -77,7 +77,7 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 13px;
+  /* padding-top: 13px; */
 }
 
 .wrap-contact100-form-btn {
